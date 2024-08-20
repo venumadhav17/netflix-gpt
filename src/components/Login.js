@@ -28,19 +28,14 @@ const Login = () => {
     //console.log(email.current.value);
     //console.log(password.current.value);
 
-    const nameValue = isSignInForm ? "" : name?.current?.value;
-
-    const message = checkValidData(
-      email?.current?.value,
-      password?.current?.value
-    );
+    const message = checkValidData(email.current.value, password.current.value);
     //console.log(message);
     setErrorMessage(message);
     if (message) return;
 
     /*if(message === null){
- // Sign In / Sign Up
- }*/
+      // Sign In / Sign Up
+    }*/
     if (!isSignInForm) {
       // Sign Up Logic
       createUserWithEmailAndPassword(
@@ -52,13 +47,13 @@ const Login = () => {
           // Signed up
           const user = userCredential.user;
           updateProfile(user, {
-            displayName: nameValue,
+            displayName: name?.current?.value,
             photoURL:
               "https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg",
           })
             .then(() => {
               // Profile updated!
-              const { uid, email, displayName, photoURL } = user;
+              const { uid, email, displayName, photoURL } = auth.currentUser;
               dispatch(
                 addUser({
                   uid: uid,
@@ -128,6 +123,7 @@ const Login = () => {
         </h1>
         {!isSignInForm && (
           <input
+            ref={name}
             type="text"
             placeholder="Full Name"
             className="p-4 my-2 w-full bg-gray-700"
