@@ -21,5 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
 
 .env
+=======
+>>>>>>> 74452f30b78501bb6ad468cbdbf4e9fd58dac1de

@@ -68,7 +68,11 @@ const Login = () => {
               // An error occurred
               setErrorMessage(error.message);
             });
+<<<<<<< HEAD
 
+=======
+          //console.log(user);
+>>>>>>> 74452f30b78501bb6ad468cbdbf4e9fd58dac1de
           //navigate("/browse");
           // ...
         })
@@ -88,7 +92,11 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
+<<<<<<< HEAD
 
+=======
+          //console.log(user);
+>>>>>>> 74452f30b78501bb6ad468cbdbf4e9fd58dac1de
           //navigate("/browse");
           // ...
         })
@@ -108,6 +116,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
+<<<<<<< HEAD
         <img
           className="h-screen object-cover"
           src={BACKGROUND_IMG}
@@ -117,6 +126,13 @@ const Login = () => {
       <form
         onSubmit={(e) => e.preventDefault()}
         className="w-full md:w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white bg-opacity-80"
+=======
+        <img src={BACKGROUND_IMG} alt="logo" />
+      </div>
+      <form
+        onSubmit={(e) => e.preventDefault()}
+        className="w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white bg-opacity-80"
+>>>>>>> 74452f30b78501bb6ad468cbdbf4e9fd58dac1de
         action=""
       >
         <h1 className="font-bold text-3xl py-4">

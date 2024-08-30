@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useSelector } from "react-redux";
 import MovieCard from "./MovieCard";
 
@@ -20,5 +21,9 @@ const GptMovieSuggestions = () => {
       </div>
     </div>
   );
+=======
+const GptMovieSuggestions = () => {
+  return <div>GptMovieSuggestions</div>;
+>>>>>>> 74452f30b78501bb6ad468cbdbf4e9fd58dac1de
 };
 export default GptMovieSuggestions;

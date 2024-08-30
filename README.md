@@ -40,6 +40,7 @@
 - GPT Search Page
 - GPT Search Bar
 - (BONUS) Multi-language Feature in our App
+<<<<<<< HEAD
 - Get Open AI Api Ke
 - Gpt Search API Call
 - fetched gptMovieSuggestions from TMDB
@@ -49,6 +50,8 @@
 - Adding .env file
 - Adding .env file to gitignore
 - Made our Site Responsive
+=======
+>>>>>>> 74452f30b78501bb6ad468cbdbf4e9fd58dac1de
 
 # Features (Planning)
 
